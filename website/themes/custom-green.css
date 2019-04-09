@@ -1,0 +1,9 @@
+/* Insert your pool's unique CSS here */
+
+.text-muted {
+    font-size: 9px;
+}
+
+.text-muted a{
+    color: #45B39D;
+}
