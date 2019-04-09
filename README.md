@@ -18,7 +18,7 @@ Change the following value to fit your deployment, and algo. Pool_algo is in quo
 ** This script allows for you to change the version of nodejs that will be installed, choose 8, 10, or 11.
 I'm currently running v11 on nearly all my pools.
 
-when you are done running this script, you will have installed, configured, and tuned the following:
+When you are done running this script, you will have installed, configured, and tuned the following:
 
 - Nodej
 - Redis
@@ -33,7 +33,7 @@ when you are done running this script, you will have installed, configured, and 
 Once you have run this script, all you have to do it download and npm update the pool, download the wallet and daemon, and run them.
 The folders these run in will already be created.
 
-***** 1 nore thing, copy and paste the code to a new .sh file on the server, if you upload from Windows, the script may not work as windows sometimes changes the whitespace or carriage returns.
+***** 1 more thing, copy and paste the code to a new .sh file on the server, if you upload from Windows, the script may not work as windows sometimes changes the whitespace or carriage returns.
 
 
 # Pool Parameters, change for each!!
