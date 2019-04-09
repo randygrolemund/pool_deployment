@@ -10,10 +10,10 @@ https://github.com/muscleman/cryptonote-nodejs-pool
 
 I like considtency, and because of this, I wrote a deployment script to configure most of what is needed to spin up a pool.
 
-** I wrote this for Ubuntu, i'm currently running v18.04 on all my pool servers.
+** I wrote this for Ubuntu, I'm currently running v18.04 on all my pool servers.
 
-Inside pool_setup.sh, you'll see som variables you can change. I tried to make this as easy as possible.
-Change the following value to fit your deployment, and algo. Pool_algo is in quotes, because it contains spaces. 
+Inside pool_setup.sh, you'll see some variables you can change. I tried to make this as easy as possible for you all.
+Change the values below, to fit your deployment, and algo. Pool_algo is in quotes, because it contains spaces. 
 
 ** This script allows for you to change the version of nodejs that will be installed, choose 8, 10, or 11.
 I'm currently running v11 on nearly all my pools.
@@ -22,6 +22,7 @@ When you are done running this script, you will have installed, configured, and 
 
 - Nodej
 - Redis
+- Swap file
 - PM2 (used to keep the pools running)
 - The user that will be running the pool (do not use root!)
 - Nginx and associated SSL certs (/etc/ssl/)
