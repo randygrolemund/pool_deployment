@@ -33,6 +33,8 @@ when you are done running this script, you will have installed, configured, and 
 Once you have run this script, all you have to do it download and npm update the pool, download the wallet and daemon, and run them.
 The folders these run in will already be created.
 
+***** 1 nore thing, copy and paste the code to a new .sh file on the server, if you upload from Windows, the script may not work as windows sometimes changes the whitespace or carriage returns.
+
 
 # Pool Parameters, change for each!!
 pool_name=LightChain
