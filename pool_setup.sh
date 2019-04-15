@@ -107,3 +107,9 @@ service nginx start
 
 # Make sure pool user owns everything in home directory.
 chown -R $pool_username:$pool_username $pool_home_directory/*
+
+# Enable Redis server on startup
+systemctl enable redis-server.service
+
+#Enable PM2 on Startup for Ubuntu
+env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup ubuntu -u pool_service --hp /home/pool_service
