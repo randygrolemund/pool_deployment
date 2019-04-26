@@ -29,7 +29,6 @@ pool_cert_path=/certs/
 pool_home_directory=/home/$pool_username
 server_user_path=/home/ubuntu
 
-
 echo "******Installing Nodejs version $node_version"
 # Additional downloads
 if [ $node_version -eq 8 ] || [ $node_version -eq 10 ];then
@@ -113,3 +112,8 @@ systemctl enable redis-server.service
 
 #Enable PM2 on Startup for Ubuntu
 env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup ubuntu -u pool_service --hp /home/pool_service
+
+#Configure PM2 logs to rotate
+su pool_service
+pm2 install pm2-logrotate
+pm2 reloadLogs
