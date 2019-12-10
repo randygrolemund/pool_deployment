@@ -20,7 +20,7 @@ I'm currently running v11 on nearly all my pools.
 
 When you are done running this script, you will have installed, configured, and tuned the following:
 
-- Nodej
+- Node.js
 - Redis
 - Swap file
 - PM2 (used to keep the pools running)
